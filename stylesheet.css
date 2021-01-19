@@ -1,5 +1,5 @@
 *, *::before, *::after {
-	font-size: 16px;
+	font-size: 10px;
 	font-family: "Gill Sans" , sans-serif, serif;
 	box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
 	flex-flow: row wrap;
 }
 
-.container-front{
+.container-front {
 	z-index: 1;
 	position: absolute;
 	width: 100%;
@@ -57,21 +57,8 @@ a {
 	background-image: url("images/home1.jpg");
 	background-color: red;
 	background-position: right;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	
-}
-
-.home-tab a {
-	
-}
-
-.about-me-tab a {
-	
-}
-
-.portfolio-tab a {
-	
+	background-repeat: repeat;
+	background-size: contain;	
 }
 
 .about-me-tab {
@@ -85,9 +72,9 @@ a {
 	justify-content: space-around;
 	background-image: url("images/about-me.jpeg");
 	background-color: gray;
-	background-position: right;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 .portfolio-tab {
@@ -100,10 +87,10 @@ a {
 	align-content: flex-end;
 	justify-content: space-around;
 	background-image: url("images/portfolio1.jpeg");
-	background-color: yellow;
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 .contact-me-tab {
