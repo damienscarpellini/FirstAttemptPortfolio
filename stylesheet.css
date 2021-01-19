@@ -47,14 +47,15 @@ a {
 	height: 100%;
 	display: block;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: flex-start;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	/*align-items: space-between;*/
 	background-image: url("images/welcome.jpeg");
 	background-color: transparent;
 	background-position: center;
 	background-repeat: repeat;
 	background-size: contain;
+	
 }
 
 .home-tab {
@@ -123,7 +124,7 @@ a {
 
 .nav-link {
 	/*z-index: 1;*/
-	background-color: red;
+	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 5px;
 	border: 1px solid black;
 	height: 3rem;
@@ -134,4 +135,19 @@ a {
 
 .nav-link:hover {
 	background-color: rgba( 255, 255, 255, 0.3);
+}
+
+.welcome-tab-text {
+	font-size: 2.5rem;
+	margin: auto ;
+}
+.welcome-tab-text-d {
+	font-size: 4rem;
+	font-weight: bold;
+	font-color: orange;
+}
+
+.underline {
+	text-decoration: underline overline;
+	font-size: 2.5rem;
 }
