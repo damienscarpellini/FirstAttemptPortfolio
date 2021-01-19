@@ -35,6 +35,9 @@ a {
 	height: 50%;
 	display: block;
 	background-color: orange;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .home-tab {
