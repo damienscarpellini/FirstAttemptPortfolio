@@ -116,7 +116,7 @@ a {
 	align-content: flex-end;
 	justify-content: space-around;
 	background-image: url("images/contact-me.jpeg");
-	background-color: blue;
+	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -167,15 +167,49 @@ a {
 	font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 500px) and (min-width: 225px) {
+	
 	.welcome-tab-text {
-		font-size: 2rem;
-		t
+		font-size: 1rem;
 	}
 	
 	.welcome-tab-text-d {
-		font-size: 3rem
-		
+		font-size: 2rem
+	}
+	
+	.underline {
+		font-size: 1rem
+	}
+	
+	.nav-link {
+		/*z-index: 1;*/
+		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+		background-color: rgba( 255, 255, 255, 0.3);
+		border-radius: 5px;
+		border: 1px solid black;
+		height: 3rem;
+		margin: 2rem;
+		padding: 1rem;
+		text-align: center;
+		font-size: 1rem;
+		justify-content: space-between;
+		margin: 0rem;
+	}
+
+	.nav-link:hover {
+		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+		background-color: rgba( 255, 255, 255, 0.3);
+		border-radius: 25px;
+		border: 1px solid black;
+		height: 2rem;
+		margin: 1rem;
+		padding: 0.5rem;
+		text-align: center;
+		transform: rotate(360deg);
+		background-color: black;
+		color: white;
+		border-color: white;
+		font-size: 1rem;
 	}
 	
 }
