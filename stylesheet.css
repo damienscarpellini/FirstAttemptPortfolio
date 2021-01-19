@@ -1,22 +1,35 @@
 *, *::before, *::after {
-	font-size: 16px;
+	font-size: 10px;
+	margin: 0px;
 	font-family: "Gill Sans" , sans-serif, serif;
 	box-sizing: border-box;
 }
 
+.main-container {
+	/*border: 2px solid black;*/
+	width: 100vw;
+	height: 100vh;
+	display: inline;
+}
 .container-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	/*border: 2px solid black;*/
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
+/*	justify-content: center;
+	align-items: center;*/
 }
 
-.container-front{
+.container-front {
+	border: 2px solid black;
 	z-index: 1;
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	top: 33vh;
+	left: 33vw;
+	width: 33vw;
+	height: 33vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -26,30 +39,30 @@ a {
 	color: black;
 	background-color: transparent;
 	text-decoration: none;
-	padding: 20px;
 }
 
 .welcome-tab {
 	z-index: 1;
-	width: 33%; 
-	height: 33%;
+	width: 100%;
+	height: 100%;
 	display: block;
-	background-color: orange;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	/*align-items: space-between;*/
 	background-image: url("images/welcome.jpeg");
-	background-color: orange;
-	background-position: right ;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
+	
 }
 
 .home-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	display: block;
+	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -57,67 +70,146 @@ a {
 	background-image: url("images/home1.jpg");
 	background-color: red;
 	background-position: right;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	
-}
-
-.home-tab a {
-	
-}
-
-.about-me-tab a {
-	
-}
-
-.portfolio-tab a {
-	
+	background-repeat: repeat;
+	background-size: contain;	
 }
 
 .about-me-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	display: block;
+	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-around;
 	background-image: url("images/about-me.jpeg");
 	background-color: gray;
-	background-position: right;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 .portfolio-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	display: block;
+	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: space-around;
 	background-image: url("images/portfolio1.jpeg");
-	background-color: yellow;
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 .contact-me-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	display: block;
+/*	display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: space-around;
 	background-image: url("images/contact-me.jpeg");
-	background-color: blue;
+	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.nav-link {
+	/*z-index: 1;*/
+	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	background-color: rgba( 255, 255, 255, 0.3);
+	border-radius: 5px;
+	border: 1px solid black;
+	height: 3rem;
+	margin: 2rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.nav-link:hover {
+	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	background-color: rgba( 255, 255, 255, 0.3);
+	border-radius: 25px;
+	border: 1px solid black;
+	height: 4rem;
+	margin: 2rem;
+	padding: 1rem;
+	text-align: center;
+	transform: rotate(360deg);
+	background-color: black;
+	color: white;
+	border-color: white;
+	font-size: 2rem;
+}
+
+.welcome-tab-text {
+	font-size: 2.5rem;
+	margin: auto;
+	text-align: center;
+}
+.welcome-tab-text-d {
+	font-size: 4rem;
+	font-weight: bold;
+	font-color: orange;
+}
+
+.underline {
+	text-decoration: underline overline;
+	font-size: 2.5rem;
+}
+
+@media only screen and (max-height: 500px) and (min-width: 225px) {
+	
+	.welcome-tab-text {
+		font-size: 1rem;
+	}
+	
+	.welcome-tab-text-d {
+		font-size: 2rem
+	}
+	
+	.underline {
+		font-size: 1rem
+	}
+	
+	.nav-link {
+		/*z-index: 1;*/
+		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+		background-color: rgba( 255, 255, 255, 0.3);
+		border-radius: 5px;
+		border: 1px solid black;
+		height: 3rem;
+		margin: 2rem;
+		padding: 1rem;
+		text-align: center;
+		font-size: 1rem;
+		justify-content: space-between;
+		margin: 0rem;
+	}
+
+	.nav-link:hover {
+		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+		background-color: rgba( 255, 255, 255, 0.3);
+		border-radius: 25px;
+		border: 1px solid black;
+		height: 2rem;
+		margin: 1rem;
+		padding: 0.5rem;
+		text-align: center;
+		transform: rotate(360deg);
+		background-color: black;
+		color: white;
+		border-color: white;
+		font-size: 1rem;
+	}
+	
 }
