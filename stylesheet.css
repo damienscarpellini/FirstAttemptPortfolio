@@ -31,13 +31,18 @@ a {
 
 .welcome-tab {
 	z-index: 1;
-	width: 50%; 
-	height: 50%;
+	width: 33%; 
+	height: 33%;
 	display: block;
 	background-color: orange;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-image: url("images/welcome.jpeg");
+	background-color: orange;
+	background-position: right ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .home-tab {
@@ -45,12 +50,15 @@ a {
 	width: 50%;
 	height: 50%;
 	display: block;
-	background-color: red;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-around;
-	
+	background-image: url("images/home1.jpg");
+	background-color: red;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	
 }
 
@@ -71,11 +79,15 @@ a {
 	width: 50%;
 	height: 50%;
 	display: block;
-	background-color: gray;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-around;
+	background-image: url("images/about-me.jpeg");
+	background-color: gray;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .portfolio-tab {
@@ -83,11 +95,15 @@ a {
 	width: 50%;
 	height: 50%;
 	display: block;
-	background-color: yellow;
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: space-around;
+	background-image: url("images/portfolio1.jpeg");
+	background-color: yellow;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .contact-me-tab {
@@ -95,9 +111,13 @@ a {
 	width: 50%;
 	height: 50%;
 	display: block;
-	background-color: blue;
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: space-around;
+	background-image: url("images/contact-me.jpeg");
+	background-color: blue;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
