@@ -124,6 +124,7 @@ a {
 
 .nav-link {
 	/*z-index: 1;*/
+	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 5px;
 	border: 1px solid black;
@@ -131,10 +132,23 @@ a {
 	margin: 2rem;
 	padding: 1rem;
 	text-align: center;
+	font-size: 1rem;
 }
 
 .nav-link:hover {
+	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	background-color: rgba( 255, 255, 255, 0.3);
+	border-radius: 25px;
+	border: 1px solid black;
+	height: 4rem;
+	margin: 2rem;
+	padding: 1rem;
+	text-align: center;
+	transform: rotate(360deg);
+	background-color: black;
+	color: white;
+	border-color: white;
+	font-size: 2rem;
 }
 
 .welcome-tab-text {
