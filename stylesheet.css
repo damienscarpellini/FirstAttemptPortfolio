@@ -153,7 +153,8 @@ a {
 
 .welcome-tab-text {
 	font-size: 2.5rem;
-	margin: auto ;
+	margin: auto;
+	text-align: center;
 }
 .welcome-tab-text-d {
 	font-size: 4rem;
@@ -164,4 +165,17 @@ a {
 .underline {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.welcome-tab-text {
+		font-size: 2rem;
+		t
+	}
+	
+	.welcome-tab-text-d {
+		font-size: 3rem
+		
+	}
+	
 }
