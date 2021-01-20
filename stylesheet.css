@@ -6,13 +6,12 @@
 }
 
 .main-container {
-	/*border: 2px solid black;*/
 	width: 100vw;
 	height: 100vh;
 	display: inline;
 }
+
 .container-back {
-	/*border: 2px solid black;*/
 	z-index: 0;
 	width: 100vw;
 	height: 100vh;
@@ -46,13 +45,11 @@ a {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
-	/*align-items: space-between;*/
 	background-image: url("images/welcome.jpeg");
 	background-color: transparent;
 	background-position: center;
 	background-repeat: repeat;
-	background-size: contain;
-	
+	background-size: contain;	
 }
 
 .home-tab {
@@ -69,13 +66,6 @@ a {
 	background-repeat: repeat;
 	background-size: contain;
 }
-
-/*input:checked ~ .nav-link {
-	width: 50vw;
-	height: 45vh;
-	background-color: rgba( 255, 255, 255, 0.7);
-
-}*/
 
 input:checked ~ .toggle-animation {
 	width: 50vw;
@@ -138,11 +128,11 @@ input:checked ~ .toggle-animation {
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 5px;
 	border: 1px solid black;
-	height: 3rem;
+	height: 6rem;
 	margin: 2rem;
-	padding: 1rem;
+	padding: 2rem;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 3rem;
 }
 
 .nav-link:hover {
@@ -150,7 +140,7 @@ input:checked ~ .toggle-animation {
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 25px;
 	border: 1px solid black;
-	height: 4rem;
+	height: 8rem;
 	margin: 2rem;
 	padding: 1rem;
 	text-align: center;
@@ -158,7 +148,7 @@ input:checked ~ .toggle-animation {
 	background-color: black;
 	color: white;
 	border-color: white;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 .welcome-tab-text {
@@ -166,30 +156,19 @@ input:checked ~ .toggle-animation {
 	margin: auto;
 	text-align: center;
 }
+
 .welcome-tab-text-d {
 	font-size: 4rem;
 	font-weight: bold;
 	font-color: orange;
 }
 
-.underline {
+.welcome-tab-bottom-text-styling {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
 }
 
-/*.home-tab > a:active {
-	background-image: none;
-}
-*/
-/*.home-tab:hover {
-	opacity: 0.4;
-}*/
-
-#home:checked {
-	opacity: 0.4;
-}
-
-@media only screen and (max-height: 500px) and (min-width: 225px) {
+@media only screen and (max-width: 700px) {
 	
 	.welcome-tab-text {
 		font-size: 1rem;
@@ -204,7 +183,6 @@ input:checked ~ .toggle-animation {
 	}
 	
 	.nav-link {
-		/*z-index: 1;*/
 		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 		background-color: rgba( 255, 255, 255, 0.3);
 		border-radius: 5px;
