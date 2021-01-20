@@ -67,7 +67,25 @@ a {
 	background-color: red;
 	background-position: right;
 	background-repeat: repeat;
-	background-size: contain;	
+	background-size: contain;
+}
+
+/*input:checked ~ .nav-link {
+	width: 50vw;
+	height: 45vh;
+	background-color: rgba( 255, 255, 255, 0.7);
+
+}*/
+
+input:checked ~ .toggle-animation {
+	width: 50vw;
+	height: 45vh;
+	background-color: rgba( 255, 255, 255, 0.7);
+	font-size: 2rem;
+}
+
+.hide-box  {
+	display: none;
 }
 
 .about-me-tab {
@@ -157,6 +175,18 @@ a {
 .underline {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
+}
+
+/*.home-tab > a:active {
+	background-image: none;
+}
+*/
+/*.home-tab:hover {
+	opacity: 0.4;
+}*/
+
+#home:checked {
+	opacity: 0.4;
 }
 
 @media only screen and (max-height: 500px) and (min-width: 225px) {
