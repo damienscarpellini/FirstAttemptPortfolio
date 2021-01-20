@@ -18,12 +18,9 @@
 	height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
-/*	justify-content: center;
-	align-items: center;*/
 }
 
 .container-front {
-	/*border: 2px solid black;*/
 	z-index: 1;
 	position: absolute;
 	top: 33vh;
@@ -62,7 +59,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -78,7 +74,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -94,7 +89,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
@@ -110,7 +104,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-/*	display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
@@ -123,7 +116,6 @@ a {
 }
 
 .nav-link {
-	/*z-index: 1;*/
 	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 5px;
