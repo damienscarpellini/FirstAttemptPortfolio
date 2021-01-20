@@ -6,8 +6,6 @@
 }
 
 .main-container {
-	width: 100vw;
-	height: 100vh;
 	display: inline;
 }
 
@@ -72,6 +70,10 @@ input:checked ~ .toggle-animation {
 	height: 45vh;
 	background-color: rgba( 255, 255, 255, 0.7);
 	font-size: 2rem;
+}
+
+input:checked:hover ~ .toggle-animation {
+	
 }
 
 .hide-box  {
