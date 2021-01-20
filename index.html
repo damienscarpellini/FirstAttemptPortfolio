@@ -12,7 +12,7 @@
 			<div class="container-back">
 <!--home tab -->
 				<div class="intro-tab">
-					<input type="checkbox" id="intro" class="hide-box" />
+					<input type="radio" name="active-tab" id="intro" class="hide-box" />
 					
 					<label for="intro" class="nav-link toggle-animation">
 						<div class="label-title">Introduction</div>
@@ -30,7 +30,7 @@
 <!--about me tab -->
 				<div class="about-me-tab">
 					<div></div>
-					<input type="checkbox" id="about-me" class="hide-box" />
+					<input type="radio" name="active-tab"  id="about-me" class="hide-box" />
 					<label for="about-me" class="nav-link toggle-about-me-tab toggle-animation">
 						<div class="label-title">About Me</div>
 						<div class="hide-content tab-text-styling">
@@ -44,7 +44,7 @@
 				</div>
 <!--portfolio tab -->
 				<div class="portfolio-tab">
-					<input type="checkbox" id="portfolio" class="hide-box" />
+					<input type="radio" name="active-tab" id="portfolio" class="hide-box" />
 					<label for="portfolio" class="nav-link toggle-portfolio-tab toggle-animation">
 						<div class="label-title">Portfolio</div>
 						<div class="hide-content tab-text-styling">
@@ -60,7 +60,7 @@
 <!--contact me tab -->
 				<div class="contact-me-tab">
 					<div></div>
-					<input type="checkbox" id="contact-me" class="hide-box" />
+					<input type="radio" name="active-tab" id="contact-me" class="hide-box" />
 					<label for="contact-me" class="nav-link toggle-contact-me-tab toggle-animation">
 						<div class="label-title">Contact Me</div>
 						<div class="hide-content tab-text-styling">
@@ -74,16 +74,18 @@
 				</div>
 			</div>
 <!--front container -->
+			<input type="radio" name="active-tab" checked="checked" id="hide-front-box" class="hide-box" />
+			<label for="hide-front-box" class="welcome-tab">
 			<div class="container-front">
 <!--welcome tab -->
 				<div class="welcome-tab">
-					<input type="radio" name="active-tab" id="hide-front-box" class="hide-box" />
-					<label for="hide-front-box" class="welcome-tab">
+					
 						<p class="welcome-tab-text">I'm <span class="welcome-tab-text-d">D</span>amien.</p>
 						<p class="welcome-tab-text"><span class="welcome-tab-text-d">D</span><span class="welcome-tab-bottom-text-styling">eveloper</span> & <span class="welcome-tab-text-d">D</span><span class="welcome-tab-bottom-text-styling">esigner</span></p>
-					</label>
+					
 				</div>
 			</div>
+			</label>
 		</div>
 	</body>
 </html>

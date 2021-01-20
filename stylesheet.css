@@ -176,11 +176,7 @@ input:checked:hover ~ .toggle-animation {
 	display: none;
 }
 
-input:checked ~ label div:first-child {
-	transition: color 0.6s linear, font-size 0.6s linear;
-	color: blue;
-	font-size: 3rem;
-}
+
 
 input:checked:hover ~ label div:first-child {
 	transition: color 0.6s linear, font-size 0.6s linear;
@@ -194,6 +190,15 @@ input:checked ~ label div {
 	display: flex;
 	flex-flow: column wrap;
 	padding: 1rem;
+	color: blue;
+}
+
+input:not(:checked) ~ .welcome-tab {
+	display: none;
+}
+
+input::checked ~ .welcome-tab {
+	color: black;
 }
 
 .tab-text-styling p {
