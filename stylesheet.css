@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-.main-container {
-	display: inline;
-}
-
 .container-back {
 	z-index: 0;
 	width: 100vw;
@@ -63,7 +59,7 @@ input:checked ~ .toggle-animation {
 	transition: height 0.6s linear, width 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	width: 50vw;
 	height: 45vh;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 2rem;
 }
 
@@ -165,7 +161,7 @@ input:checked:hover ~ .toggle-animation {
 	font-color: orange;
 }
 
-.welcome-tab-bottom-text-styling {
+.welcome-tab-text-bottom-styling {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
 }
@@ -194,7 +190,7 @@ input:not(:checked) ~ .welcome-tab {
 	display: none;
 }
 
-input::checked ~ .welcome-tab {
+input:checked ~ .welcome-tab {
 	color: black;
 }
 

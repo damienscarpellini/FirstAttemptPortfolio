@@ -1,10 +1,5 @@
 @media only screen and (max-width: 700px) {
 	
-	.welcome-tab {
-		flex: display;
-		align-content: center;
-	}
-	
 	.welcome-tab-text {
 		font-size: 1rem;
 		color: blue;
@@ -23,7 +18,7 @@
 		font-size: 2rem
 	}
 	
-	.welcome-tab-bottom-text-styling {
+	.welcome-tab-text-bottom-styling {
 		font-size: 2rem;
 	}
 	
