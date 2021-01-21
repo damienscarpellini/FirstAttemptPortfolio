@@ -7,7 +7,7 @@
 		width: 100%;
 	}
 	
-	.welcome-text-top-p {
+	.welcome-tab-name {
 		position: relative;
 		top: 3rem;
 		font-size: 2rem;	
@@ -17,7 +17,7 @@
 		font-size: 2rem
 	}
 	
-	.welcome-tab-text-bottom-styling {
+	.welcome-tab-description {
 		font-size: 2rem;
 	}
 	
