@@ -1,0 +1,71 @@
+@media only screen and (max-width: 700px) {
+	
+	.welcome-tab-text {
+		font-size: 1rem;
+		color: blue;
+		background-color: transparent;
+		width: 100%;
+	}
+	
+	.welcome-tab-name {
+		position: relative;
+		top: 3rem;
+		font-size: 2rem;	
+	}
+	
+	.welcome-tab-text-d {
+		font-size: 2rem
+	}
+	
+	.welcome-tab-description {
+		font-size: 2rem;
+	}
+	
+	.label-title {
+		font-size: 1.5rem;
+		position: relative;
+		bottom: 1rem;
+	}
+	
+	.nav-link {
+		height: 3rem;
+		padding: 2rem;
+	}
+
+	.nav-link:hover {
+		height: 5rem;
+		padding-top: 2.5rem;
+		font-size: 3rem;
+	}
+	
+	.toggle-intro-tab p {
+		color: black;
+		font-size: 1rem;
+		text-align: center;
+		position: relative;
+		top: 5vh;
+	}
+	
+	.welcome-tab {
+		display: block;
+		background-repeat: no-repeat;
+		background-size: contain;	
+	}
+	
+	input:checked:hover ~ label div:first-child {
+		font-size: 3rem;
+	}
+	
+	.tab-text-styling p {
+		font-size: 1.5rem;
+	}
+	
+	.tab-text-styling ul li {
+		list-style-type: none;
+		color: black;
+		transition: color 0.6s linear, font-size 0.6s linear;
+		font-size: 1rem;
+		padding-top: 5px;
+	}
+	
+}
