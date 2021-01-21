@@ -11,34 +11,89 @@
 <!--back container -->
 			<div class="container-back">
 <!--home tab -->
-				<div class="home-tab">
-					<a class="home-link nav-link" href="#">Home</a>
+				<div class="intro-tab">
+					<input type="radio" name="active-tab" id="intro" class="hide-box" />
+					
+					<label for="intro" class="nav-link toggle-animation">
+						<div class="label-title">Introduction</div>
+						<div class="hide-content tab-text-styling">
+							<p>Hello, I'm Damien.</p>
+							<p>Welcome!</p>
+							<p>This is my first (of many) portfolio webpage.</p>
+							<p>I have designed and developed this page using HTML & CSS only.</p>
+							<p>Please look around and try not to break anything while you do.</p>
+						</div>
+					</label>
 					<div></div>
-				</div>			
+				</div>
+						
 <!--about me tab -->
 				<div class="about-me-tab">
 					<div></div>
-					<a class="about-me-link nav-link" href="#">About Me</a>
+					<input type="radio" name="active-tab"  id="about-me" class="hide-box" />
+					<label for="about-me" class="nav-link toggle-about-me-tab toggle-animation">
+						<div class="label-title">About Me</div>
+						<div class="hide-content tab-text-styling">
+							<p>Originally from Evesham, I now live in Bristol.</p>
+							<p>I currently study at IO-Academy.</p>
+							<p>Looking for a Jr Developer role.</p>
+							<p>My goal is to move into cyber security in 2 years time.</p>
+							<p>I enjoy logical problem solving which is why I got into the industry</p>
+						</div>
+					</label>
 				</div>
 <!--portfolio tab -->
 				<div class="portfolio-tab">
-					<a class="portfolio-link nav-link" href="#">Portfolio</a>
+					<input type="radio" name="active-tab" id="portfolio" class="hide-box" />
+					<label for="portfolio" class="nav-link toggle-portfolio-tab toggle-animation">
+						<div class="label-title">Portfolio</div>
+						<div class="hide-content tab-text-styling">
+							
+							<p class="ul-title">Current Projects</p>
+							<ul>
+								<li><a href="#">one project</a></li>
+								<li><a href="#">two project</a></li>
+								<li><a href="#">three project</a></li>
+							</ul>
+							<p class="ul-title">Most Recent completed Projects</p>
+							<ul>
+								<li><a href="#">one project</a></li>
+								<li><a href="#">two project</a></li>
+								<li><a href="#">three project</a></li>
+							</ul>
+						</div>
+					</label>
 					<div></div>
 				</div>
 <!--contact me tab -->
 				<div class="contact-me-tab">
 					<div></div>
-					<a class="contact-me-link nav-link" href="#">Contact Me</a>
+					<input type="radio" name="active-tab" id="contact-me" class="hide-box" />
+					<label for="contact-me" class="nav-link toggle-contact-me-tab toggle-animation">
+						<div class="label-title">Contact Me</div>
+						<div class="hide-content tab-text-styling">
+							<p>If you would like to work with me, feel free to contact me on the below details:</p>
+							<p>Phone: 0794*******</p>
+							<p>Email: damienscarpellini@yahoo.co.uk</p>
+							
+							
+						</div>
+					</label>
 				</div>
 			</div>
 <!--front container -->
+			<input type="radio" name="active-tab" checked="checked" id="hide-front-box" class="hide-box" />
+			<label for="hide-front-box" class="welcome-tab">
 			<div class="container-front">
 <!--welcome tab -->
 				<div class="welcome-tab">
-					<p class="welcome-tab-text">I'm <span class="welcome-tab-text-d">D</span>amien.</p>
-					<p class="welcome-tab-text"><span class="welcome-tab-text-d">D</span><span class="underline">eveloper</span> & <span class="welcome-tab-text-d">D</span><span class="underline">esigner</span></p>
+					
+						<p class="welcome-tab-text">I'm <span class="welcome-tab-text-d">D</span>amien.</p>
+						<p class="welcome-tab-text"><span class="welcome-tab-text-d">D</span><span class="welcome-tab-bottom-text-styling">eveloper</span> & <span class="welcome-tab-text-d">D</span><span class="welcome-tab-bottom-text-styling">esigner</span></p>
+					
 				</div>
 			</div>
+			</label>
 		</div>
 	</body>
 </html>

@@ -6,24 +6,18 @@
 }
 
 .main-container {
-	/*border: 2px solid black;*/
-	width: 100vw;
-	height: 100vh;
 	display: inline;
 }
+
 .container-back {
-	/*border: 2px solid black;*/
 	z-index: 0;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-flow: row wrap;
-/*	justify-content: center;
-	align-items: center;*/
 }
 
 .container-front {
-	/*border: 2px solid black;*/
 	z-index: 1;
 	position: absolute;
 	top: 33vh;
@@ -35,12 +29,6 @@
 	align-items: center;
 }
 
-a {
-	color: black;
-	background-color: transparent;
-	text-decoration: none;
-}
-
 .welcome-tab {
 	z-index: 1;
 	width: 100%;
@@ -49,20 +37,17 @@ a {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
-	/*align-items: space-between;*/
 	background-image: url("images/welcome.jpeg");
 	background-color: transparent;
 	background-position: center;
 	background-repeat: repeat;
-	background-size: contain;
-	
+	background-size: contain;	
 }
 
-.home-tab {
+.intro-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -71,14 +56,31 @@ a {
 	background-color: red;
 	background-position: right;
 	background-repeat: repeat;
-	background-size: contain;	
+	background-size: contain;
+}
+
+input:checked ~ .toggle-animation {
+	transition: height 0.6s linear, width 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	width: 50vw;
+	height: 45vh;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 2rem;
+	color: black;
+}
+
+input:checked:hover ~ .toggle-animation {
+	color: green;
+	transition: height 0.6s linear, width 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+}
+
+.hide-box  {
+	display: none;
 }
 
 .about-me-tab {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
@@ -94,7 +96,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-	/*display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
@@ -110,7 +111,6 @@ a {
 	z-index: 0;
 	width: 50%;
 	height: 50%;
-/*	display: block;*/
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
@@ -123,24 +123,28 @@ a {
 }
 
 .nav-link {
-	/*z-index: 1;*/
-	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	transition: color 0.6s linear, height 0.6s linear, width 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 5px;
 	border: 1px solid black;
-	height: 3rem;
+	height: 6rem;
 	margin: 2rem;
-	padding: 1rem;
+	padding: 2rem;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 3rem;
+	color: black;
+}
+
+.label-title {
+	font-size: 3rem;
 }
 
 .nav-link:hover {
-	transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	transition: height 0.6s linear, width 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 	background-color: rgba( 255, 255, 255, 0.3);
 	border-radius: 25px;
 	border: 1px solid black;
-	height: 4rem;
+	height: 8rem;
 	margin: 2rem;
 	padding: 1rem;
 	text-align: center;
@@ -148,7 +152,7 @@ a {
 	background-color: black;
 	color: white;
 	border-color: white;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 .welcome-tab-text {
@@ -156,18 +160,85 @@ a {
 	margin: auto;
 	text-align: center;
 }
+
 .welcome-tab-text-d {
 	font-size: 4rem;
 	font-weight: bold;
 	font-color: orange;
 }
 
-.underline {
+.welcome-tab-bottom-text-styling {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
 }
 
-@media only screen and (max-height: 500px) and (min-width: 225px) {
+.hide-content {
+	display: none;
+}
+
+
+
+input:checked:hover ~ label div:first-child {
+	transition: color 0.6s linear, font-size 0.6s linear;
+	color: green;
+	font-size: 5rem;
+}
+
+
+input:checked ~ label div {
+	z-index: 2;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 1rem;
+	color: blue;
+}
+
+input:not(:checked) ~ .welcome-tab {
+	display: none;
+}
+
+input::checked ~ .welcome-tab {
+	color: black;
+}
+
+.tab-text-styling p {
+	transition: color 0.6s linear, height 0.6s linear, width 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: center;
+	width: 100%;
+	height: 60%;
+	color: black;
+	font-size: 2.5rem;
+}
+
+ul li a {
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+	transition: color 0.6s linear, font-size 0.6s linear;
+	font-size: 2rem;
+	padding-top: 5px;
+}
+
+ul li a:hover {
+	transition: color 0.6s linear, font-size 0.6s linear;
+	color: red;
+	font-size: 3rem;
+}
+
+ul {
+	padding: 0px;
+}
+
+/*p .ul-title {
+	font-size: 3rem;
+	text-align: center;
+	color: green;
+}*/
+
+@media only screen and (max-width: 700px) {
 	
 	.welcome-tab-text {
 		font-size: 1rem;
@@ -182,7 +253,6 @@ a {
 	}
 	
 	.nav-link {
-		/*z-index: 1;*/
 		transition: height 0.6s linear,  border-radius 0.6s linear, border-color 0.6s linear, background-color 0.6s linear, color 0.6s linear, font-size 0.6s linear;
 		background-color: rgba( 255, 255, 255, 0.3);
 		border-radius: 5px;
@@ -210,6 +280,14 @@ a {
 		color: white;
 		border-color: white;
 		font-size: 1rem;
+	}
+	
+	.toggle-intro-tab p {
+		color: black;
+		font-size: 1rem;
+		text-align: center;
+		position: relative;
+		top: 5vh;
 	}
 	
 }
