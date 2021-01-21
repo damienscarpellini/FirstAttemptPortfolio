@@ -161,7 +161,7 @@ input:checked:hover ~ .toggle-animation {
 	font-color: orange;
 }
 
-.welcome-tab-text-bottom-styling {
+.welcome-tab-description {
 	text-decoration: underline overline;
 	font-size: 2.5rem;
 }
